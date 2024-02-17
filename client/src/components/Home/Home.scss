@@ -1,0 +1,80 @@
+@import "../../css-config/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.main-content-home {
+    padding: 20px 0;
+    position: relative;
+    background-color: white;
+    height: 100%;
+    .home-content {
+        height: 100%;
+        flex-direction: row;
+        margin: 0;
+        // max-width: 1200px;
+        .title-banner {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            height: calc(100vh - 100px);
+            .section-title-home {
+                width: 900px;
+                bottom: 0;
+                left: 0;
+                padding: 300px 0 0 80px;
+                p {
+                    font-size: 30px;
+                    font-weight: 130;
+                }
+                h1 {
+                    font-size: 50px;
+                    background: linear-gradient(to bottom right, #137DC5, #137DC5);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .section-img {
+                justify-content: flex-end;
+                right: 0;
+                padding: 0;
+                margin: 0;
+                img {
+                    width: 750px;
+                    height: calc(100vh - 100px);
+                }
+            }
+        }
+
+        .location-banner {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            height: calc(100vh - 100px);
+            .section-title-location {
+                display:flex;
+                width: 100%;
+                bottom: 0;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    text-transform: capitalize;
+                    font-size: 40px;
+                    background: linear-gradient(to bottom right, #137DC5, #137DC5);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .section-map {
+                justify-content: flex-end;
+                right: 0;
+                padding: 0;
+                margin: 0;
+                img {
+                    width: 750px;
+                    height: calc(100vh - 100px);
+                }
+            }
+        }
+    }
+}

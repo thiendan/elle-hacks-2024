@@ -1,0 +1,98 @@
+@import "../../css-config/mixins.scss";
+@import "../../css-config/mixins.scss";
+
+.main-header {
+    padding: 0 20px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid white;
+    z-index: 99;
+    @include md {
+        padding: 0 40px;
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        @include md {
+            height: 80px;
+        }
+        .left {
+            list-style-type: none;
+            display: none;
+            gap: 25px;
+            @include md {
+                display: flex;
+            }
+            li {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+        .center {
+            cursor: pointer;
+            display: flex;
+            h1 {
+                font-size: 22px;
+                font-weight: 900;
+                background: linear-gradient(to bottom right, #137DC5, #137DC5);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                @include md {
+                    font-size: 34px;
+                }
+            }
+            .icon {
+                font-size: 45px;
+                padding-top: 20px;
+                padding-right: 10px;
+                color: #137DC5;
+            }
+            @include md {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include md {
+                gap: 25px;
+            }
+            .cta {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                &.v2 {
+                    background-color: black;
+                    color: white;
+                    padding: 15px;
+                    border-radius: 30px;
+                }
+                &.v1 {
+                    color: black;
+                    background-color: white;
+                    border-color: white;
+                    border-style: none;
+                    padding: 15px;
+                }
+            }
+            .pfp {
+                cursor: pointer;
+                img {
+                    width: 60px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
