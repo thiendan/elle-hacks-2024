@@ -73,17 +73,19 @@
                 text-transform: uppercase;
                 cursor: pointer;
                 &.v2 {
-                    background-color: black;
+                    background-color: #000035;
+                    border-color: #000035;
                     color: white;
-                    padding: 15px;
+                    padding: 15px 30px;
                     border-radius: 30px;
                 }
                 &.v1 {
-                    color: black;
+                    color: #000035;
                     background-color: white;
                     border-color: white;
                     border-style: none;
                     padding: 15px;
+                    font-size: 16px;
                 }
             }
             .pfp {

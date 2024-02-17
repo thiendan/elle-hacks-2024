@@ -1,56 +1,26 @@
 import { useEffect, useState, useContext, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import FocusLock from 'react-focus-lock'; 
-import { GoogleMapReact } from 'google-map-react'
-// import {PlaceIdContext} from './PlaceIdContext'; 
-import "./Home.scss";
-// import "./map.css";
+import { useAuth0 } from "@auth0/auth0-react";
 
-import img1 from "../../assets/hm-img1.png";
+import "./Home.scss";
+
+import { RiSpeakLine } from "react-icons/ri";
+import { MdOutlineAccessibility } from "react-icons/md";
+import { VscFeedback } from "react-icons/vsc";
+
+import img1 from "../../assets/hm-img1.jpg";
+import img2 from "../../assets/img2.png";
+import demo from "../../assets/demo.png";
 
 const Home = () => {
-    // const [placeId, setPlaceId] = useContext(PlaceIdContext);
-    // const marker = useRef();
-
-    // useEffect(() => {
-    //     if (marker.current) { 
-    //         marker.current.setMap(null);
-    //     }
-    //     const google = window.google;
-    //     const service = new google.maps.places.PlacesService(mapObject);
-    //     const request = {
-    //     placeId: placeId,
-    //     fields: [
-    //         'formatted_address',
-    //         'geometry',
-    //         'name',
-    //         'url',
-    //     ],
-    //     };
-    //     service.getDetails(request, handleResponse);
-    //     function handleResponse(place, placesServiceStatus) {
-    //     // Handle successful responses (Section 2.3)
-    //     if (placesServiceStatus === 'OK') {
-    //     const searchedPlace = {
-    //       address: place.formatted_address,
-    //       coordinates: {
-    //         lat: place.geometry.location.lat(),
-    //         lng: place.geometry.location.lng(),
-    //       },
-    //       name: place.name,
-    //       url: place.url,
-    //     };
-    //     marker.current.setMap(mapObject);
-    //     mapObject.panTo(searchedPlace.coordinates);
-    // } else {
-    //     console.error('Google Maps Place Details API call has failed.');
-    // }
-    // }
-    // }, [mapObject, placeId]);
-
+    const navigate = useNavigate();
+    const { loginWithRedirect } = useAuth0();
+    const { isAuthenticated } = useAuth0();
 
     return (
-        <div className="main-content-home">
+        <div>
+        {!(isAuthenticated) && <div className="main-content-home">
             <div className="home-content">
 
                 <div className="title-banner">
@@ -63,16 +33,66 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* <div className="location-banner">
-                    <div className="section-title-location">
-                        <h1>Find a food bank near you</h1>
+                <div className="about-banner">
+                    <div className="section-title-about">
+                        <div className="title">
+                            <h1>State of the art interview software</h1>
+                        </div>
+                        <div className="desc">
+                            <p>Empowering candidates to ace their interviews with personalized AI coaching.</p>
+                            <p>We are a company transforming the way candidates prepare for interviews. Our innovative AI-powered software provides realistic practice simulations and personalized feedback, equipping users with the confidence and skills to excel in any interview setting.</p>
+                        </div>
                     </div>
-                    <div className="section-map">
-                        
+                    <div className="section-content">
+                        <div className="video">
+                            <img src={demo} alt=""/>
+                        </div>
                     </div>
-                </div> */}
+                </div>
+
+                <div className="keyBenefits-banner">
+                    <div className="section-title-kb">
+                        <h1>Key Benefits</h1>
+                    </div>
+                    <div className="section-content">
+                        <div className="benefit">
+                            <RiSpeakLine className="icon"/>
+                            <h1>Simulated Interview Experience</h1>
+                            <p>In the zargonian plains of Zog, glitcherflies flounced by the blorpful bogs, their luminescent antennae aglow. Flibberty flurps frolicked in the quagmire, singing whimsically of frumious bandersnatch and jubjub birds..</p>
+                        </div>
+                        <div className="benefit">
+                            <MdOutlineAccessibility className="icon"/>
+                            <h1>Simulated Interview Experience</h1>
+                            <p>In the zargonian plains of Zog, glitcherflies flounced by the blorpful bogs, their luminescent antennae aglow. Flibberty flurps frolicked in the quagmire, singing whimsically of frumious bandersnatch and jubjub birds..</p>
+                        </div>
+                        <div className="benefit">
+                            <VscFeedback className="icon"/>
+                            <h1>Personalized Feedback</h1>
+                            <p>In the zargonian plains of Zog, glitcherflies flounced by the blorpful bogs, their luminescent antennae aglow. Flibberty flurps frolicked in the quagmire, singing whimsically of frumious bandersnatch and jubjub birds..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="signup-banner">
+                    {/* <div className="section-content-su">
+                        <img src={img2} alt=""/>
+                    </div> */}
+                    <div className="section-title-su">
+                        <div className="title">
+                            <h1>Smart Interview Software to Boost your Confidence</h1>
+                        </div>
+                        <div className="desc">
+                            <p>Made by Students. For the Students.</p>
+                        </div>
+                    </div>
+                    <button className="cta" onClick={() => {
+                            loginWithRedirect()
+                    }}>Sign Up</button>
+                </div>
 
             </div>
+        </div>}
+        {isAuthenticated && navigate("/Dashboard")}
         </div>
     );
 };

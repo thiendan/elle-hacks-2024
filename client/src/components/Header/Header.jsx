@@ -24,10 +24,7 @@ const Header = () => {
         <header className="main-header">
             <div className="header-content">
                 <ul className="left">
-                    <li onClick={()=> navigate("/")}>Home</li>
-                    <li onClick={()=> navigate("/About")}>About</li>
-                    {isAuthenticated && donate && <li onClick={()=> navigate("/Donate")}>Donate</li>}
-                    {isAuthenticated && !donate && <li onClick={()=> navigate("/Order")}>Order</li>}
+                    
                 </ul>
             
                 <div className="center" onClick={()=> navigate("/")}>
@@ -36,9 +33,12 @@ const Header = () => {
                 </div>
 
                 {!(isAuthenticated) && <div className="right">
+                    <button className="cta v1" onClick={() => {
+                        loginWithRedirect()
+                        }}>Sign Up</button>
                     <button className="cta v2" onClick={() => {
                         loginWithRedirect()
-                        navigate('/LandingPage')}}>Log In</button>
+                        }}>Log In</button>
                 </div>}
 
                 {(isAuthenticated) && <div className="right">
