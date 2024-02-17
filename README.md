@@ -1,2 +1,3 @@
-hi
-YmFsc2Rvbi50aGllbmRhbkBnbWFpbC5jb20:LZ92apWTOyD5C_QrytZUR
+# ELLE HACKS 2024
+
+Project Description:
