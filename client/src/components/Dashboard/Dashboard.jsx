@@ -38,12 +38,10 @@ const Dashboard = () => {
     const org = useState("#6666a3");
     const algo = useState("#7f7fb2");
 
-
     // const data_c = [
     //     { argument:'Communication', value:communication},
     //     { argument:'Other', value:(1-communication) },
     //   ];
-
 
     return (
         <div>
