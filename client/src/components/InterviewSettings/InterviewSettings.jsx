@@ -47,6 +47,16 @@ const InterviewSettings = () => {
                                 <option value="60">60</option>
                             </select>
                         </div>
+                        <div className="input option">
+                            <div className="cv">
+                                <h1>Insert CV/Resume:</h1>
+                                <textarea type="text"/>
+                            </div>
+                            <div className="cv">
+                                <h1>Insert Job Description</h1>
+                                <textarea type="text"/>
+                            </div>
+                        </div>
                     </div>
                     {collapse && <div className="accessibility">
                         <div className="title" onClick={()=>setCollapse(false)}>

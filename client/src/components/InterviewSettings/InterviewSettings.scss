@@ -31,6 +31,19 @@
                     select {
                         width: 180px;
                     }
+                    &.input {
+                        display: flex;
+                        flex-direction: row;
+                        width: 80%;
+                        justify-content: space-between;
+                        textarea {
+                            height: 200px;
+                            width: 500px;
+                            padding-top: 5px;
+                            padding-left: 5px;
+                            line-height: 1em;
+                        }
+                    }
                 }
             }
             .accessibility {
