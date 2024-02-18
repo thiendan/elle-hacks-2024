@@ -29,13 +29,17 @@ const InterviewSettings = () => {
                             <select>
                                 <option value="someOption">Software Developer</option>
                                 <option value="otherOption">Product Management</option>
+                                <option value="otherOption">Mechanical Engineer</option>
                             </select>
                         </div>
                         <div className="option">
                             <h1>Stage</h1>
                             <select>
-                                <option value="someOption">Some option</option>
-                                <option value="otherOption">Other option</option>
+                                <option value="someOption">Preliminary Interview</option>
+                                <option value="otherOption">First Interview</option>
+                                <option value="otherOption">Second Interview</option>
+                                <option value="otherOption">Third Interview</option>
+                                <option value="otherOption">Technical Interview</option>
                             </select>
                         </div>
                         <div className="option">
