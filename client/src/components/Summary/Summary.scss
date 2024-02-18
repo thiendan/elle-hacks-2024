@@ -80,8 +80,13 @@
                         border-radius: 50px;
                         background: linear-gradient(to bottom right, #71b1dc, #cfe5f3);
                         padding: 10px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         &.v1 {
-                            height: 200px;
+                            height: 260px;
                             width: 550px;
                            
                         }
@@ -90,11 +95,50 @@
                             width: 400px;
                             padding-bottom: 0;
                         }
-                        h1{
-                            font-size: 18px;
-                            font-weight: 500;
+                        .title {
+                            // padding: 0;
+                            h1{
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
                         }
-                        
+                        .App {
+                            width: 100%;
+                        }
+                        .quote {
+                            h2 {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                        .metric {
+                            font-size: 23px;
+                            display: flex;
+                            flex-direction: row;
+                            &.v1 {
+                                h2{
+                                    font-weight: 300;
+                                }
+                            }
+                            &.v2 {
+                                h2{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .skills{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            width: 90%;
+                            .skill-title{
+                                h2{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
                     }
                 }
             }
