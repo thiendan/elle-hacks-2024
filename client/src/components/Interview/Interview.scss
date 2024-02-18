@@ -22,23 +22,73 @@
                 width: 300px;
             }
         } 
-        .btn {
-            display:flex;
-            justify-content: right;
-            width: 100%;
-            padding-top: 20px;
-            .cta {
-                font-size: 14px;
-                font-weight: 600;
-                text-transform: uppercase;
-                cursor: pointer;
-                background-color: #350000;
-                border-color: #350000;
-                color: white;
-                padding: 15px 30px;
-                border-radius: 30px;                    
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            padding-left: 100px;
+            .v1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // padding-right: 100px;
+                padding-left:200px;
+                .audio-controls{
+                    padding-top: 20px;
+                    padding-right: 100px;
+                    button {
+                        display:flex;
+                        justify-content: right;
+                        width: 200px;
+                        padding-top: 20px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        background-color: #89898c;
+                        border-color: #89898c;
+                        color: white;
+                        padding: 15px 30px;
+                        border-radius: 30px;  
+                    }
+                }
+                .btn {
+                    display:flex;
+                    justify-content: right;
+                    width: 200px;
+                    padding-top: 20px;
+                    .cta {
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        background-color: #4297d0;
+                        border-color: #4297d0;
+                        color: white;
+                        padding: 15px 30px;
+                        border-radius: 30px; 
+                    }
+                }
+            }
+            .btn {
+                display:flex;
+                justify-content: right;
+                padding-top: 20px;
+                width: 200px;
+                .cta {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    background-color: #350000;
+                    border-color: #350000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 30px;                    
+                }
             }
         }
+        
     }
 }
-// AIzaSyB7sj5YR14G0LGWxgDdSeI80q3FiaR_77k
