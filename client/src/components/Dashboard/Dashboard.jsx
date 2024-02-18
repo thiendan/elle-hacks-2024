@@ -50,7 +50,7 @@ const Dashboard = () => {
 
                 <div className="welcome-message">
                     <div className="msg">
-                        <h1 className="v1">Welcome back,</h1>
+                        <h1 className="v1">Welcome back {user.name}! </h1>
                         {/* <h1 className="v2">{user.name}</h1> */}
                     </div>
                     <div className="interview-btn">
