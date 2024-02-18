@@ -112,6 +112,8 @@
                         .skills{
                             display: flex;
                             flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
                             .skill-title{
                                 h2{
                                     font-size: 14px;
