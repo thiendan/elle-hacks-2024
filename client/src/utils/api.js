@@ -1,6 +1,5 @@
 import axios from "axios";
 
-const OPEN_AI_KEY = process.env.REACT_APP_DEV_URL
 
 const params = (api_key) => {
     return {

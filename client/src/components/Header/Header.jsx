@@ -1,17 +1,14 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import "./Header.scss";
 import { Context } from "../../utils/context";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import { PiBirdBold } from "react-icons/pi";
-import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
     const navigate = useNavigate();
-    const {landingPage, setLandingPage} = useContext(Context);
-    const {donate} = useContext(Context);
-    // const {visited, setVisited} = useContext(Context);
+    const {landingPage, _} = useContext(Context);
     const { loginWithRedirect } = useAuth0();
     const { logout } = useAuth0();
     const { user, isAuthenticated, isLoading } = useAuth0();
