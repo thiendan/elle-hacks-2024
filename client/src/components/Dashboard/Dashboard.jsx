@@ -89,7 +89,7 @@ const Dashboard = () => {
                         </div>
 
                         <div className="row v2">
-                            <div className="widget v2">
+                            <div className="widget1 v2">
                                 <div className="skills">
                                     <div className="skill-title">
                                         <h2>Agile Methodology</h2>
@@ -119,7 +119,7 @@ const Dashboard = () => {
                                     <h1>Top 3 Skills</h1>
                                 </div>
                             </div>
-                            <div className="widget v4">
+                            <div className="widget1 v4">
                                 <div className="skills">
                                     <div className="skill-title">
                                         <h2>Communication</h2>
