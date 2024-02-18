@@ -9,9 +9,6 @@ import Summary from "./components/Summary/Summary";
 import AppContext from "./utils/context";
 
 
-require('dotenv').config() // adding dotenv to load environment variables.
-
-
 function App() {
   return (
     <BrowserRouter>
