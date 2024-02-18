@@ -7,7 +7,7 @@ def generate_questions(JOB_ROLE, JOB_DESCRIPTION):
     response = client.chat.completions.create(
     model="gpt-4-turbo-preview",
     messages=[
-        {"role": "system", "content": "${JOB_ROLE}, please generate 10 questions to ask the interviewee. ${JOB_DESCRIPTION}"}
+        {"role": "system", "content": f"{JOB_ROLE}, please generate 10 questions to ask the interviewee. {JOB_DESCRIPTION}"}
     ]
     )
 
