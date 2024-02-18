@@ -7,7 +7,7 @@ export const Context = createContext();
 const AppContext = ({ children }) => {
     const [homeClick, setHomeClick] = useState(true);
     const [data, setData] = useState(false);
-
+    const [playing, setPlaying] = useState(false);
 
     return (
         <Context.Provider 
@@ -16,6 +16,8 @@ const AppContext = ({ children }) => {
                 setHomeClick,
                 data,
                 setData,
+                playing,
+                setPlaying,
             }}
         >
             {children}

@@ -29,7 +29,7 @@ const Header = () => {
             
                 <div className="center" onClick={()=> navigate("/")}>
                     <PiBirdBold className="icon"/>
-                    <h1>Pelican</h1>
+                    <h1>AbilityBoost</h1>
                 </div>
 
                 {!(isAuthenticated) && <div className="right">

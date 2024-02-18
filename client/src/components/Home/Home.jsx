@@ -25,8 +25,8 @@ const Home = () => {
 
                 <div className="title-banner">
                     <div className="section-title-home">
-                        <h1>PELICAN</h1>
-                        <p><em>empowering families one meal at a time.</em></p>
+                        <h1>ABILITYBOOST</h1>
+                        <p><em>AI-enabled interview practice for all</em></p>
                     </div>
                     <div className="section-img">
                         <img src={img1} alt=""/>

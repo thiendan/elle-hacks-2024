@@ -1,0 +1,44 @@
+@import "../../css-config/mixins.scss";
+@import "../../css-config/mixins.scss";
+
+.IN-content {
+    height: 100%;
+    width: 100%;
+    .content {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .screen {
+            width: 80%;
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            background: green;
+            height: 700px;
+            .person-screen {
+                height: 150px;
+                width: 300px;
+            }
+        } 
+        .btn {
+            display:flex;
+            justify-content: right;
+            width: 100%;
+            padding-top: 20px;
+            .cta {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                background-color: #350000;
+                border-color: #350000;
+                color: white;
+                padding: 15px 30px;
+                border-radius: 30px;                    
+            }
+        }
+    }
+}
+// AIzaSyB7sj5YR14G0LGWxgDdSeI80q3FiaR_77k

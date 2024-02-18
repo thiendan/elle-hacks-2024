@@ -1,0 +1,82 @@
+@import "../../css-config/mixins.scss";
+@import "../../css-config/mixins.scss";
+
+.IS-content {
+    width: 100%;
+    height: calc(100vh - 1500px);
+    .content {
+        padding: 20px;
+        .title {
+            h1{
+                font-weight: 500;
+                background: linear-gradient(to bottom right, #137DC5, #137DC5);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 40px;
+            }
+        }
+        .setting-features {
+            .main{
+                
+                .option{
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: left;
+                    padding: 10px 0;
+                    h1 {
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                    select {
+                        width: 180px;
+                    }
+                }
+            }
+            .accessibility {
+                padding-top: 30px;
+                .title {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    h1 {
+                        font-size: 23px;
+                        color: black;
+                    }
+                    .icon {
+                        font-size: 23px;
+                    }
+                }
+                .option {
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 40px;
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: right;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+            .cta {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                background-color: #000035;
+                border-color: #000035;
+                color: white;
+                padding: 15px 30px;
+                border-radius: 30px;
+            }
+        }
+    }
+}
