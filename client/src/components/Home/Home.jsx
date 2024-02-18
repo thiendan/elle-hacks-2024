@@ -1,4 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useContext, useRef } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
+import FocusLock from 'react-focus-lock'; 
 import { useAuth0 } from "@auth0/auth0-react";
 
 import "./Home.scss";
@@ -8,6 +10,7 @@ import { MdOutlineAccessibility } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
 
 import img1 from "../../assets/hm-img1.jpg";
+import img2 from "../../assets/img2.png";
 import demo from "../../assets/demo.png";
 
 const Home = () => {

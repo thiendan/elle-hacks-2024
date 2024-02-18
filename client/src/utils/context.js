@@ -1,4 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import {useLocation} from "react-router-dom";
+import { fetchDataFromApi } from "./api";
 
 export const Context = createContext();
 

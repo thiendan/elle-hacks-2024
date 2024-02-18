@@ -1,5 +1,6 @@
-import { useState, useContext } from "react";
+import { useEffect, useState, useContext, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import FocusLock from 'react-focus-lock'; 
 import { useAuth0 } from "@auth0/auth0-react";
 import { Context } from "../../utils/context";
 

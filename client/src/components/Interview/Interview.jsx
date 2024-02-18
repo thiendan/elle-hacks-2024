@@ -1,8 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useContext, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { getQuestions } from "../../utils/openai";
+import FocusLock from 'react-focus-lock'; 
+import { useAuth0 } from "@auth0/auth0-react";
+import { Context } from "../../utils/context";
 
 import "./Interview.scss";
+
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropUpLine } from "react-icons/ri";
 
 const Interview = () => {
     const navigate = useNavigate();
