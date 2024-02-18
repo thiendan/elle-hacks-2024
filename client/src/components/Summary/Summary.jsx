@@ -1,13 +1,9 @@
-import { useEffect, useState, useContext, useRef } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import FocusLock from 'react-focus-lock'; 
 import { useAuth0 } from "@auth0/auth0-react";
 import { Context } from "../../utils/context";
 
 import "./Summary.scss";
-
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { RiArrowDropUpLine } from "react-icons/ri";
 
 const Summary = () => {
     const navigate = useNavigate();
